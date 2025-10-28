@@ -259,9 +259,11 @@ Kill process:
 ```
 kill <PID>
 ```
+
 ✅ Result
 Script runs for 10 minutes in the background and can be manually terminated using kill.
----------------------------------------------------------------
+__________________________________________________________________________
+
 
 ## 📦 Part 7 – Yum Repository (Zabbix Local HTTP Repo)
 
