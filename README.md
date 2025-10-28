@@ -300,7 +300,7 @@ restorecon -Rv /var/www/html/zabbix
 systemctl restart httpd
 
 # 7. Verify
-curl http://<repo-server-ip>/zabbix/repodata/
+curl http://10.0.2.10/zabbix/repodata/
 ```
 ### 💻 On Each Client VM (no Internet)
 ```bash
