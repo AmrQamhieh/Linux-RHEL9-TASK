@@ -262,6 +262,7 @@ kill <PID>
 
 ✅ Result
 Script runs for 10 minutes in the background and can be manually terminated using kill.
+
 __________________________________________________________________________
 
 
@@ -330,7 +331,7 @@ Zabbix 7.0 repo for RHEL 9 hosted via Apache
 Clients install packages without Internet access
 
 All external repos disabled — only local HTTP repo in use
--------------------------------------------------------------------------
+___________________________________________________________
 
 ## 🌐 Part 8 – Network Management
 
@@ -365,7 +366,7 @@ firewall-cmd --list-rich-rules
 Ports 80 and 443 opened and persistent across reboots
 
 SSH blocked for the specified IP successfully
-----------------------------------------------------------------------
+_________________________________________________________
 
 ## ⏰ Part 9 – Cronjob (User Log Collection)
 
@@ -397,12 +398,14 @@ Add:
 ```bash
 30 1 * * * /usr/local/bin/log_users.sh
 ```
-## ✅ Result
+ ✅ Result
 
 Script runs daily at 1:30 AM
 
 Logged-in users appended to /var/log/users.log with timestamps
-----------------------------------------------------------------
+___________________________________________________________________________
+
+
 ## 🗄️ Part 10 – MariaDB Setup & Database Configuration
 
 ### 🎯 Objective
@@ -423,7 +426,7 @@ mysql_secure_installation
 ```
 I Followed prompts to set the root password and remove test users.
 
-# 🧱 Create Database and User
+### 🧱 Create Database and User
 ```bash
 mysql -u root -p
 ```
@@ -434,11 +437,11 @@ CREATE USER 'studentuser'@'localhost' IDENTIFIED BY 'pass123';
 GRANT ALL PRIVILEGES ON studentdb.* TO 'studentuser'@'localhost';
 FLUSH PRIVILEGES;
 ```
-# 🔍 Verify Access
+### 🔍 Verify Access
 ```bash
 mysql -u studentuser -p studentdb
 ```
-# 🧩 Example Data
+### 🧩 Example Data
 Inside the studentdb:
 ```sql
 CREATE TABLE students (
@@ -455,13 +458,13 @@ INSERT INTO students VALUES
 ('110-003', 'Mary', 'Green', 'Mechanical', 2018);
 ```
 
-# Verification:
+###Verification:
 
 ```sql
 SELECT * FROM students
 ```
 
-# ✅ Result
+✅ Result
 
 MariaDB installed and running from the local repo
 
