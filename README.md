@@ -458,13 +458,13 @@ INSERT INTO students VALUES
 ('110-003', 'Mary', 'Green', 'Mechanical', 2018);
 ```
 
-###Verification:
+### Verification:
 
 ```sql
 SELECT * FROM students
 ```
 
-✅ Result
+### ✅ Result
 
 MariaDB installed and running from the local repo
 
