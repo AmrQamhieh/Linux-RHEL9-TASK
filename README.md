@@ -92,9 +92,11 @@ Create mount directory:
 ```bash
 mkdir /mnt/data
 ```
-Edit /etc/fstab:
+### Edit /etc/fstab: 
+```bash
 vim /etc/fstab
-Added the following line at the bottom:
+```
+Added the following line:
 ```bash
 /dev/myvg/mylv    /mnt/data    ext4    defaults    0 0
 ```
